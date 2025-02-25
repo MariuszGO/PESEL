@@ -7,8 +7,14 @@
     <title>Biblioteka</title>
 </head>
 <body>
-<header></header>
-<nav></nav>
+<header>
+<H1>Biblioteka w Książkowicach Małych</H1>
+
+</header>
+<nav>
+    <H4>Dodaj czytelnika</H4>
+    <
+</nav>
 <main></main>
 <aside></aside>
 <footer></footer>
