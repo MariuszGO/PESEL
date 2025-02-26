@@ -13,7 +13,12 @@
 </header>
 <nav>
     <H4>Dodaj czytelnika</H4>
-    <
+    <form action="biblioteka.php" method="post">
+    <p>Imie: <input type="text" name="imie"> </p>
+    <label for="nazwisko">Nazwisko: </label> <input type="text" name="nazwisko" id="nazwisko"><br><br>
+    <label  for="symbol"> Symbol: </label> <input type="number" name="symbol" id="symbol"><br><br>
+    <button>Akceptuj</button>
+</form>
 </nav>
 <main></main>
 <aside></aside>
