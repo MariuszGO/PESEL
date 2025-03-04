@@ -18,11 +18,21 @@
     <label for="nazwisko">Nazwisko: </label> <input type="text" name="nazwisko" id="nazwisko"><br><br>
     <label  for="symbol"> Symbol: </label> <input type="number" name="symbol" id="symbol"><br><br>
     <button>Akceptuj</button>
+    <!-- SK 1-->
 </form>
 </nav>
-<main></main>
-<aside></aside>
-<footer></footer>
+<main>
+    <img src="biblioteka.png" alt="biblioteka">
+    <H6>ul. Czytelników&nbsp15; Książkowice Małe</H6>
+    <a href="mailto:biuro@bip.pl">    <p>Czy masz jakieś uwagi?</p> </a>
+</main>
+<aside>
+    <H4>Nasi czytelnicy:</h4>
+    <!-- SKRYPT -->
+</aside>
+<footer>
+    <p>Projekt witryny: NR zdającego (PESEL)</p>
+</footer>
 
 </body>
 </html>

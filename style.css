@@ -1,0 +1,46 @@
+*{
+    font-family: Tahoma;
+}
+
+
+header, footer {
+    width: 100%;
+    float: left;
+    background-color: saddlebrown;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+nav, aside{
+    float: left;
+    background-color: tan;
+    height: 400px;
+    width: 40%;
+}
+
+main{
+    float: left;
+    background-color: wheat;
+    height: 400px;
+    width: 20%;
+}
+
+img{
+    margin-right: 20px;
+    float: right;
+}
+
+h4{
+    text-align: center;
+}
+
+form {
+    margin: 5px;
+}
+
+li:hover{
+    background-color: sienna;
+    color: white;
+
+}
