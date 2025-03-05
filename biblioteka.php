@@ -18,6 +18,24 @@
     <label for="nazwisko">Nazwisko: </label> <input type="text" name="nazwisko" id="nazwisko"><br><br>
     <label  for="symbol"> Symbol: </label> <input type="number" name="symbol" id="symbol"><br><br>
     <button>Akceptuj</button>
+<?php
+    $conn = mysqli_connect("localhost","root","","biblioteka");
+
+    if(isset($_POST['imie']) && isset($_POST['nazwisko']) && isset($_POST['symbol']))
+    {
+        $imie = $_POST['imie']; 
+        $nazwisko = $_POST['nazwisko'];
+        $symbol = $_POST['symbol'];
+
+        echo "Dodano czytelnika $imie $nazwisko";
+        //echo "Dodano czytelnika " . $imie . " " . $nazwisko;
+
+        $zapytanie = "INSERT INTO czytelnicy VALUES (NULL,'$imie','$nazwisko','$symbol')";
+
+        mysqli_query($conn,$zapytanie);
+
+}
+?>
     <!-- SK 1-->
 </form>
 </nav>
@@ -28,7 +46,19 @@
 </main>
 <aside>
     <H4>Nasi czytelnicy:</h4>
+    
     <!-- SKRYPT -->
+<?php
+    $zapytanie = "SELECT imie, nazwisko FROM czytelnicy ORDER BY nazwisko asc";
+    $wynik = mysqli_query($conn, $zapytanie);
+  echo "<ol>";
+    while($klucz = mysqli_fetch_assoc($wynik)){
+        echo "<li>" . $klucz['imie'] . " " .  $klucz['nazwisko'] . "</li>";
+
+    }
+    echo "</ol>";
+    mysqli_close($conn);
+?>
 </aside>
 <footer>
     <p>Projekt witryny: NR zdającego (PESEL)</p>
